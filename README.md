@@ -29,4 +29,4 @@
 
     python3 godzilla.py -m -u [url]   --> [Scan with SqlMap]
 
-AGRUPAR POR CATEGORÍAS
+    python3 godzilla.py -l   --> [Open a vulnerable sites list]
