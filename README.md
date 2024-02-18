@@ -19,6 +19,6 @@
 
     python3 godzilla.py -i   --> [Install the tools] 
     
-    python3 godzilla.py -s [username]   --> [Sherlock scanner]
+    python3 godzilla.py -s [username]   --> [(S)herlock scanner]
     
     python3 godzilla.py -c   --> [The credits] 
