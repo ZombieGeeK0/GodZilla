@@ -17,6 +17,8 @@
     sudo bash install.sh
 `[?]` Utilización:
 
-    python3 godzilla.py -i   --> [Install the ools] 
+    python3 godzilla.py -i   --> [Install the tools] 
+    
     python3 godzilla.py -s [username]   --> [Sherlock scanner]
+    
     python3 godzilla.py -c   --> [The credits] 
