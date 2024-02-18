@@ -18,10 +18,7 @@
 
 
 
-_Y repite_
-
 ```
 hasta finalizar
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
