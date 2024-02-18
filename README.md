@@ -8,13 +8,13 @@
 
 `[1]` Clonamos el `repositorio`
  
-      git clone https://github.com/ZombieGeeK0/GodZilla
+    git clone https://github.com/ZombieGeeK0/GodZilla
 `[2]` Accedemos a la `carpeta:`
 
-      cd GodZilla
+    cd GodZilla
 `[3]` Ejecutamos el `instalador:`
 
-      sudo bash install.sh
+    sudo bash install.sh
 `[?]` Utilización:
 
-    njnjn
+    python3 godzilla.py -s 
