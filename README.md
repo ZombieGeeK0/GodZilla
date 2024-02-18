@@ -26,3 +26,5 @@
     python3 godzilla.py -a -p [port]   --> [Attack with bash reverse shell]
 
     python3 godzilla.py -h   --> [Help]
+
+AGRUPAR POR CATEGORÍAS
