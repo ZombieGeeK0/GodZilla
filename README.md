@@ -6,6 +6,6 @@
 
 `[?]` Instalación en `Linux:`
 
-## [1] Clonamos el repositorio:
+## [1] Clonamos el repositorio: ##
 
       git clone https://github.com/ZombieGeeK0/GodZilla
