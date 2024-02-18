@@ -17,4 +17,4 @@
     sudo bash install.sh
 `[?]` Utilización:
 
-    python3 godzilla.py -s 
+    python3 godzilla.py [argument] [argument] 
