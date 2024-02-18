@@ -15,10 +15,6 @@
 `[3]` Ejecutamos el `instalador:`
 
       sudo bash install.sh
+`[?]` Utilización:
 
-
-
-```
-hasta finalizar
-```
-
+    njnjn
