@@ -27,4 +27,6 @@
 
     python3 godzilla.py -h   --> [Help]
 
+    python3 godzilla.py -a -u   --> [Scan with SqlMap]
+
 AGRUPAR POR CATEGORÍAS
