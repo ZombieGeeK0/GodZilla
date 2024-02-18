@@ -6,6 +6,17 @@
 
 `[?]` Instalación en `Linux:`
 
-**[1] Clonamos el `repositorio`
-
+`[1]` Clonamos el `repositorio`
+ 
       git clone https://github.com/ZombieGeeK0/GodZilla
+`[2]` Accedemos a la `carpeta:`
+
+      cd GodZilla
+`[3]` Ejecutamos el `instalador:`
+
+      sudo bash install.sh
+
+
+´´´
+hello
+```
