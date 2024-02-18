@@ -22,3 +22,5 @@
     python3 godzilla.py -s [username]   --> [Sherlock scanner]
     
     python3 godzilla.py -c   --> [The credits] 
+
+    python3 godzilla.py -a -p [port]   --> [Attack with bash reverse shell]
