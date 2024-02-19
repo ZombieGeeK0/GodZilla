@@ -30,3 +30,14 @@
     python3 godzilla.py -m -u [url]   --> [Scan with SqlMap]
 
     python3 godzilla.py -l   --> [Open a vulnerable sites list]
+
+[![image.png](https://i.postimg.cc/ZYLY0Q3R/image.png)](https://postimg.cc/G9Hn5qXw)
+
+<hr>
+
+`[#]` Puedes contactar conmigo por `Discord` mandando una `invitación a qwfkr:`
+
+      qwfkr
+`[#]` Si no, mándame un Email a `3xpl017.contact@proton.me:`
+
+      3xpl017.contact@proton.me:
