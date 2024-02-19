@@ -31,7 +31,7 @@
 
     python3 godzilla.py -l   --> [Open a vulnerable sites list]
 
-[![image.png](https://i.postimg.cc/ZYLY0Q3R/image.png)](https://postimg.cc/G9Hn5qXw)
+![imagen](https://github.com/ZombieGeeK0/GodZilla/assets/158185295/156e5b7e-3cf9-4a3d-b018-34cc8e4532b9)
 
 <hr>
 
