@@ -220,7 +220,7 @@ def sqlmap():
         print(Fore.RED + Back.RESET + title)
 
         print('========================================================================================')
-        os.system(f'cd sqlmap &&python3 sqlmap.py -u {para2[2]} -dbs') 
+        os.system(f'cd sqlmap &&python3 sqlmap.py -u "{para2[2]}" -dbs') 
         print('========================================================================================')
         print('[?] Proceso finalizado con éxito.')
         print(Fore.RESET + Back.RESET)
