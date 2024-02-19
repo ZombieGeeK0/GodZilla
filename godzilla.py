@@ -95,7 +95,7 @@ def install():
     '''
         print(Fore.RED + Back.RESET + title)
         print('========================================================================================')
-        os.system(f'sudo su && sudo apt-get update && apt-get install git -y && sudo apt-get install python3 && pip3 install colorama && pip3 install webbrowser && sudo apt-get install python3-pip && git clone https://github.com/sherlock-project/sherlock')
+        os.system(f'sudo su && sudo apt-get update && apt-get install git -y && sudo apt-get install python3 && pip3 install colorama && pip3 install webbrowser && sudo apt-get install python3-pip && git clone https://github.com/sherlock-project/sherlock && git clone https://github.com/sqlmapproject/sqlmap')
         print('========================================================================================')
         print('[?] Proceso finalizado con éxito.')
         print(Fore.RESET + Back.RESET)
